@@ -1,0 +1,20 @@
+.ant-breadcrumb {
+  opacity: 90%;
+}
+
+.ant-breadcrumb a {
+  color: white;
+}
+.ant-breadcrumb .ant-breadcrumb-separator {
+  color: white;
+}
+
+/* CSS cho màn hình nhỏ hơn hoặc bằng 768px */
+@media screen and (max-width: 640px) {
+  #login {
+    font-size: 14px;
+  }
+  #register {
+    font-size: 14px;
+  }
+}

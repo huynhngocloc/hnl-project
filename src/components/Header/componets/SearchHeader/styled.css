@@ -1,0 +1,12 @@
+/* styled.css */
+.search-header {
+  position: relative;
+}
+
+.search-input {
+  position: absolute;
+  top: 60px; /* Điều chỉnh khoảng cách từ ô input đến nút Search */
+  left: 0;
+  z-index: 10; /* Đảm bảo ô input hiển thị phía trên nút Search */
+  /* Các thuộc tính khác */
+}

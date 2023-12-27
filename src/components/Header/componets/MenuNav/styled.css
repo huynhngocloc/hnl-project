@@ -1,0 +1,28 @@
+.ant-menu-light .ant-menu-item:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected):hover,
+:where(.css-dev-only-do-not-override-p7e5j5).ant-menu-light
+  > .ant-menu
+  .ant-menu-item:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected):hover,
+:where(.css-dev-only-do-not-override-p7e5j5).ant-menu-light
+  .ant-menu-item:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected)
+  > .ant-menu-submenu-title:hover,
+:where(.css-dev-only-do-not-override-p7e5j5).ant-menu-light
+  > .ant-menu
+  .ant-menu-item:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected)
+  > .ant-menu-submenu-title:hover {
+  color: white;
+}
+
+:where(.css-dev-only-do-not-override-p7e5j5).ant-menu .ant-menu-title-content {
+  transition: none;
+}
+
+/* Màu chữ mặc định */
+
+.ant-menu-horizontal .ant-menu-item-active a {
+  color: white !important; /* Đổi màu chữ khi menu được chọn */
+  font-weight: bold;
+}
+.ant-menu-horizontal .ant-menu-item-selected span {
+  color: white !important;
+  font-weight: bold;
+}

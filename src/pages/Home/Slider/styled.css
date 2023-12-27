@@ -1,0 +1,21 @@
+/* CSS cho màn hình lớn hơn 768px */
+@media screen and (min-width: 1024px) {
+  .slider {
+    display: block;
+  }
+
+  .scroll {
+    display: none;
+  }
+}
+
+/* CSS cho màn hình nhỏ hơn hoặc bằng 768px */
+@media screen and (max-width: 1024px) {
+  .slider {
+    display: none;
+  }
+
+  .scroll {
+    display: flex;
+  }
+}

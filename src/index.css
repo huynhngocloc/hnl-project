@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.slick-arrow {
+  background-color: #ffffff; /* Màu nền */
+  color: #000000; /* Màu chữ */
+  border-radius: 50%; /* Bo tròn nút */
+  width: 40px; /* Chiều rộng */
+  height: 40px; /* Chiều cao */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}

@@ -1,0 +1,6 @@
+/* CSS cho màn hình nhỏ hơn hoặc bằng 768px */
+@media screen and (max-width: 640px) {
+  #shoppingcart {
+    font-size: 18px;
+  }
+}

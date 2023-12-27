@@ -1,0 +1,5 @@
+/* Tùy chỉnh kích thước nút trong Popconfirm */
+.ant-popconfirm-buttons button {
+  color: white;
+  background: blue;
+}
