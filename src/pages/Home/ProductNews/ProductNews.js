@@ -1,19 +1,21 @@
-import React ,{useEffect} from 'react';
+import React ,{useEffect, useState} from 'react';
 import { Button, Tooltip  } from 'antd';
 import {
     ShoppingCartOutlined,
     InfoCircleOutlined
   } from '@ant-design/icons';
 import { formatPrice } from '../../../utils/number';
+import getApiUrl from '../../../helpers/getApiUrl';
+import axios from 'axios';
 import { useDispatch, useSelector } from 'react-redux';
+import { ProductsActions, ProductsSelectors } from '../../../store/modules/Products';
 import { addToCart } from '../../../store/modules/CartProducts/actions';
-import { newLatestproductActions, newLatestproductSelectors } from '../../../store/modules/LatestProduct';
 
 const ProductNews = () => {
 
 
     const dispatch = useDispatch()
-    const productnew = useSelector(newLatestproductSelectors.selectDataLastest)
+    const productnew = useSelector(ProductsSelectors.selectProductData)
     const handleAddToCart = (productId) => {
         dispatch(addToCart(productId))
         console.log('ID sản phẩm:', productId);
@@ -21,7 +23,7 @@ const ProductNews = () => {
 
 
     useEffect(()=>{
-        dispatch(newLatestproductActions.fetchDatalaterProduct())
+        dispatch(ProductsActions.get())
     },[dispatch])
 
 
